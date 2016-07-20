@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Untitled</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="notify.js"></script>
+<script>
+$.notify.addStyle('foo', {
+  html: 
+    "<div>" +
+      "<div class='clearfix'>" +
+        "<div class='title' data-notify-html='title'/>" +
+        "<div class='buttons'>" +
+          "<button class='no'>Cancel</button>" +
+          "<button class='yes' data-notify-text='button'></button>" +
+        "</div>" +
+      "</div>" +
+    "</div>"
+});
+</script>
+</head>
+
+<body>
+<input name="notif" type="button" value="Shoow notif" onclick="$('.elem-demo').notify('Hello Box');"/>
+
+<div class="elem-demo">a Box</div>
+</body>
+
+</html>
